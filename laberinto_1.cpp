@@ -80,7 +80,7 @@ bool resolverLaberintoBacktracking(vector<vector<char>>& laberinto, int x, int y
     if (x == static_cast<int>(laberinto[0].size()) - 2 && y == static_cast<int>(laberinto.size()) - 2) {
         laberinto[y][x] = RECORRIDO_FINAL;
         imprimirLaberinto(laberinto);
-        pausar(500); // Pausa para ver el paso final
+        pausar(1000); // Pausa para ver el paso final
         return true;
     }
 
