@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <stack>
-#include <queue>
 #include <cstdlib>
 #include <ctime>
 #include <unistd.h>  
@@ -27,10 +26,10 @@ void generarLaberinto(vector<vector<char>>& laberinto, int ancho, int alto) {
 
     stack<Punto> pilaCaminos;
     Punto inicio(1, 1);
-    laberinto[inicio.y][inicio.x] = CAMINO;
-    pilaCaminos.push(inicio);
+    laberinto[inicio.y][inicio.x] = CAMINO; //Marca el punto de inicio como camino
+    pilaCaminos.push(inicio); //Agrega
 
-    while (!pilaCaminos.empty()) {
+    while (!pilaCaminos.empty()) { 
         Punto actual = pilaCaminos.top();
         vector<Punto> vecinos;
 
