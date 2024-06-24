@@ -96,7 +96,7 @@ bool resolverLaberintoBacktracking(vector<vector<char>>& laberinto, int x, int y
             laberinto[nuevoY][nuevoX] = RECORRIDO_FINAL; // Marcar como parte del recorrido final
             imprimirLaberinto(laberinto);
             imprimirEspacioEntreLaberintos(1); // Imprimir 1 líneas vacías entre laberintos
-            pausar(650); // Pausa para ver el paso actual
+            pausar(850); // Pausa para ver el paso actual
 
             if (resolverLaberintoBacktracking(laberinto, nuevoX, nuevoY, visitado)) {
                 return true;
