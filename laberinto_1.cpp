@@ -79,7 +79,7 @@ bool resolverLaberintoBacktracking(vector<vector<char>>& laberinto, int x, int y
     if (x == static_cast<int>(laberinto[0].size()) - 2 && y == static_cast<int>(laberinto.size()) - 2) {
         laberinto[y][x] = RECORRIDO_FINAL;
         imprimirLaberinto(laberinto);
-        pausar(650); // Pausa para ver el paso final
+        pausar(950); // Pausa para ver el paso final
         return true;
     }
 
@@ -95,7 +95,7 @@ bool resolverLaberintoBacktracking(vector<vector<char>>& laberinto, int x, int y
             laberinto[nuevoY][nuevoX] = RECORRIDO_FINAL; // Marcar como parte del recorrido final
             imprimirLaberinto(laberinto);
             imprimirEspacioEntreLaberintos(1); // Imprimir 1 líneas vacías entre laberintos
-            pausar(650); // Pausa para ver el paso actual
+            pausar(200); // Pausa para ver el paso actual
 
             if (resolverLaberintoBacktracking(laberinto, nuevoX, nuevoY, visitado)) {
                 return true;
@@ -104,7 +104,7 @@ bool resolverLaberintoBacktracking(vector<vector<char>>& laberinto, int x, int y
             laberinto[nuevoY][nuevoX] = VISITADO; // Marcar como visitado
             imprimirLaberinto(laberinto);
             imprimirEspacioEntreLaberintos(1); // Imprimir 1 líneas vacías entre laberintos
-            pausar(650); // Pausa para ver el paso actual
+            pausar(850); // Pausa para ver el paso actual
         }
     }
 
