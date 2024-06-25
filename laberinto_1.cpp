@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <stack> //BFS LIFO
+#include <stack> //DFS LIFO
 #include <cstdlib> //random
 #include <ctime>
 #include <unistd.h>  
